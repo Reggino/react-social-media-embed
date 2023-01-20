@@ -69,7 +69,7 @@ const PinterestEmbed = (_a) => {
     const postId = postIdMatch !== null && postIdMatch !== void 0 ? postIdMatch : '000000000000000000';
     return (React.createElement("div", Object.assign({}, divProps, { className: (0, classnames_1.default)('rsme-embed rsme-pinterest-embed', divProps.className), style: Object.assign({ overflow: 'hidden', width: width !== null && width !== void 0 ? width : undefined, height: height !== null && height !== void 0 ? height : undefined, borderRadius }, divProps.style) }),
         React.createElement(EmbedStyle_1.EmbedStyle, null),
-        React.createElement("iframe", { className: (0, classnames_1.default)('pinterest-post', !ready && 'rsme-d-none'), src: `https://assets.pinterest.com/ext/embed.html?id=${postId}`, width: "100%", height: !ready ? 0 : height, frameBorder: "0", scrolling: "no", onLoad: () => setReady(true) }),
+        React.createElement("iframe", { className: (0, classnames_1.default)('pinterest-post', !ready && 'rsme-d-none'), src: `https://assets.pinterest.com/ext/embed.html?id=${postId}`, width: "100%", height: !ready ? 0 : height, frameBorder: "0", onLoad: () => setReady(true) }),
         !ready && !placeholderDisabled && placeholder));
 };
 exports.PinterestEmbed = PinterestEmbed;

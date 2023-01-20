@@ -40,6 +40,11 @@ const EmbedStyle = (_a) => {
         .rsme-embed.rsme-facebook-embed .fb-post span {
           width: 100% !important;
         }
+        
+        .rsme-embed .pinterest-post {
+          overflow-y:scroll;
+          overflow-x:hidden;
+        }
       `));
 };
 exports.EmbedStyle = EmbedStyle;
