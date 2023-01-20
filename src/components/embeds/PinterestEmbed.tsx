@@ -88,7 +88,6 @@ export const PinterestEmbed = ({
         width="100%"
         height={!ready ? 0 : height}
         frameBorder="0"
-        scrolling="no"
         onLoad={() => setReady(true)}
       ></iframe>
       {!ready && !placeholderDisabled && placeholder}
